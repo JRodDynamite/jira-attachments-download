@@ -94,7 +94,6 @@ if __name__ == "__main__":
     print "For the JQL - " + JQL
     total_issues = issues.total
     print "Total number of issues: " + str(total_issues)
-    total_issues = 2
     cont = raw_input("Continue? (y/n)")
     if cont.lower() == "y":
         while issues_fetched < total_issues:
