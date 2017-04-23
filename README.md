@@ -4,7 +4,7 @@ Does as the name suggests.
 
 ## Requirements
 
-0. Python _(preferably 2.7.9+)_
+1. Python _(preferably 2.7.9+)_
 
 ## Installation
 
