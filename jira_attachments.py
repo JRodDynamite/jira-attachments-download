@@ -47,6 +47,7 @@ jira_inst = JIRA(**options)
 
 
 def init_logging():
+    '''function to initialize logging'''
     log_filename = "log_" + str(datetime.now()).split(".")[0].replace(":", "") + ".txt"
     logging.basicConfig(filename=DOWNLOAD_LOCATION + log_filename,
                         level=logging.INFO,
@@ -55,6 +56,7 @@ def init_logging():
 
 
 def download_file(url_data):
+    '''function to download the file from given url'''
     local_filename = url_data[0]
     # NOTE the stream=True parameter
     r = requests.get(url_data[1], auth=HTTPBasicAuth(JIRA_USERNAME, JIRA_PASSWORD), stream=True)
@@ -67,6 +69,7 @@ def download_file(url_data):
 
 
 def fetch_jql_issues(startsAt):
+    '''function to fetch issues using jql'''
     issues = jira_inst.search_issues(JQL, startsAt)
     return issues
 
