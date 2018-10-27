@@ -1,6 +1,6 @@
 # JIRA Attachment Downloader
 
-Does as the name suggests.
+Does as the name suggests. That's it.
 
 ## Requirements
 
